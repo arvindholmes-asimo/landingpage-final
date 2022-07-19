@@ -1,0 +1,511 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px ;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    }
+
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1,
+             inset -3px -3px 7px #ffffff,
+             inset 3px 3px 5px #ceced1;
+}
+.navbar-nav{
+    margin-left:auto;
+  }
+
+.navbar{
+    background: rgb(238, 235, 235);
+    padding:0px;
+    z-index: 1;
+}  
+
+.nav-link{
+    padding:15px;
+    margin:0px;
+}
+
+.nav-link:hover{
+    background-color: #ffffff;
+}
+
+.nav-item{
+    padding-right:20px;
+}
+
+.special{
+    margin:2%;
+}
+
+.navbar-brand{
+    margin-left:2%;
+}
+
+#contact-icons > a {
+    padding:10px;
+    font-size:30px;
+}
+
+#contact-icons {
+    margin-left:40%;
+    text-align:center;
+    margin-right:1px;
+    width:1%;
+    padding-top:10px;
+}
+
+address{
+    padding-top:10px;
+    display: inline-block;
+    font-size: 12px;
+    margin-left:10px
+}
+
+.related-video{
+    width: 25rem;
+    cursor: pointer;
+}
+
+#main-video{
+    position: relative;
+    margin-right:10px;
+    height:450px;
+    cursor: pointer;
+}
+
+#controls{
+    border-top:7px solid grey;
+    transform:translateY(-110%);
+    width:100%;
+    opacity: 0;
+    transition:opacity 0.5s;
+    padding:0.3vw;
+    margin:0px;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+#form{
+    max-width:100%;
+    border:1px solid rgb(163, 158, 158) ;
+    border-radius: 5px;
+    
+    padding-top: 15px;
+    padding-right:20px;
+    background: rgb(255, 255, 255);
+    height:50%;
+}
+
+textarea{
+    margin-left:5px;
+    margin-top:15px;
+}
+
+input, button{
+    /* margin:5px; */
+    margin-left:5px;
+    margin-top:10px;
+}
+
+.lSPager{
+    visibility: hidden;
+}
+
+#playicon{
+    font-size: 60px;
+    position: absolute;
+    right:45%;
+    top:40%;
+    color:#495057;
+    cursor:pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    /* color:tomato */
+}
+
+.card-text{
+    width:80%;
+    margin:10px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    /* color:crimson; */
+}
+
+#goToPrevSlide{
+    position: absolute;
+    bottom:70%;
+    left:-1%;
+    transform: translate(1%,70%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#goToNextSlide{
+    position: absolute;
+    bottom:70%;
+    right:-1%;
+    transform: translate(1%,70%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-backward{
+    color:white;
+    padding-left:1vw;
+    padding-right:1vw;
+}
+
+.fa-forward{
+    color:white;
+    padding-left:1vw;
+}
+
+.fa-play, .fa-pause{
+    color:white;
+}
+.fa-redo{
+    color:white;
+    padding-left:1vw;
+}
+
+.fa-volume-up, .fa-volume-mute{
+    color:white;
+    padding-left:1vw;
+    padding-right:27vw;
+}
+
+.fa-expand{
+    color:white;
+    padding-left:1vw;
+    width:10px;
+}
+
+#play-speed{
+    width:80px; 
+}
+
+#main-video:hover #controls{
+    opacity: 1;
+    transition:opacity 2s;
+}
+
+.card-img-top{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* .related-video{
+    width: 23.5rem;
+} */
+
+.fa-user-circle{
+    font-size:70px;
+    color:rgb(0, 100, 158);
+    position: relative;
+    bottom:20px;
+}
+
+#theme{
+    position: fixed;
+    right:-50px;
+    width:50px;
+    padding-top:5px;
+    border:1px solid transparent;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    transition:all 1s;
+    cursor: pointer;
+}
+
+.circle{
+    height:20px;
+    width:20px;
+    display: inline-block;
+    border:1px solid;
+    border-radius: 50%;
+}
+
+.fa-arrow-left{
+    font-size: 15px;
+    position:absolute;
+    left:-35px;
+    top:50px;
+    /* color:tomato; */
+    border:2px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    padding:8px;
+    width:35px;
+    height:36px;
+    
+}
+
+footer{
+    background-color:#333;
+    padding:20px;
+    text-align: center;
+    color:white;
+    font-size: 12px;
+}
+
+#playProgress{
+    position:absolute;
+    border-top:7px solid blueviolet;
+    width:0%;
+    transition:all 1s;
+    bottom:100%;
+    left:-0.01px;
+}
+
+#vid-heading, #vid-detail{
+    padding-top:15px;
+}
+
+@media (max-width:600px){
+    
+    .navbar-brand{
+        margin:auto;
+    }
+
+    #john-card{
+        color:rgb(0, 0, 0);
+        text-align:center;
+        width: 100%;
+    }
+
+    #contact-icons {
+        margin:auto;
+        width: 100%;
+    }
+
+    #navbarNav{
+        text-align: center;
+    }
+
+    #main-video{
+        position: relative;
+        width:100%;
+        height:50%;
+        cursor: pointer;
+        padding:20px;
+    }
+
+    .fa-volume-up, .fa-volume-mute{
+        color:white;
+        padding-left:1vw;
+        padding-right:7vw;
+    }
+
+    #controls{
+        border-top:5px solid grey;
+        transform:translateY(-110%);
+        width:100%;
+        opacity: 0;
+        transition:opacity 0.5s;
+        padding:1.2vw;
+        margin:0px;
+    }
+
+    #playicon{
+        font-size: 60px;
+        position: absolute;
+        right:44%;
+        top:32%;
+        color:#495057;
+        cursor:pointer;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    #form{
+        max-width:90%;
+        border:1px solid rgb(167, 160, 160) ;
+        margin:auto;
+        background: rgb(255, 255, 255);
+        box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1,
+        inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+        height:10%;
+        transform: translateY(120%);
+    }
+
+    .related-video{
+        width: 25rem;
+        padding:10px;
+    }
+
+    .card-img-top{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    #main-video-info{
+        transform: translateY(-260%);
+    }
+
+    #video-wrapper{
+        transform: translate(-1.5%,-125%);
+    }
+
+    #vid-heading, #vid-detail{
+        padding:15px;
+    }
+}
+
+@media (min-width:600px) and (max-width:760px){
+    
+    #main-video{
+        position: relative;
+        cursor: pointer;
+        width:100%;
+        height:100%;
+        padding:0px;
+    }
+
+    #contact-icons > a {
+        padding:3px;
+        font-size:25px;
+    }
+    
+    #main-video-info{
+        padding:0px;
+    }
+
+    #contact-icons{
+        margin-top:2.5rem;
+    }
+
+    #john-card{
+        color:rgb(0, 0, 0);
+        text-align:center;
+        width: 100%;
+    }
+
+    .related-video{
+        width: 16rem;
+        height: 100%;
+    }
+
+    #goToPrevSlide{
+        position: absolute;
+        bottom:82%;
+        left:-3%;
+        transform: translate(3%,82%);
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    #goToNextSlide{
+        position: absolute;
+        bottom:82%;
+        right:-3%;
+        transform: translate(-3%,82%);
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .fa-user-circle{
+        margin-top:20px;
+    }
+
+    .fa-volume-up, .fa-volume-mute{
+        color:white;
+        padding-left:1vw;
+        padding-right:35vw;
+    }
+
+    #playicon{
+        font-size: 60px;
+        position: absolute;
+        right:44%;
+        top:32%;
+        color:#495057;
+        cursor:pointer;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    #main-video-info{
+        transform: translateY(-280%);
+    }
+
+    #video-wrapper{
+        transform: translate(-1.5%,-125%);
+    }
+
+    #form{
+        transform: translateY(115%);
+    }
+
+
+}
+
+@media (max-width:1060px) and (min-width:760px){
+    .special{
+        margin:5%;
+    }
+
+    #john-card{
+        color:rgb(0, 0, 0);
+        text-align:left;
+        width: 100%;
+    }
+
+    #contact-icons {
+        margin-left:30%;
+    }
+
+    #playicon{
+        font-size: 60px;
+        position: absolute;
+        right:44%;
+        top:38%;
+        color:#495057;
+        cursor:pointer;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    #main-video{
+        position: relative;
+        width:65%;
+        cursor: pointer;
+    }
+
+    #form{
+        height:100%;
+    }
+
+    .fa-volume-up, .fa-volume-mute{
+        padding-right:11vw;
+    }
+
+    .card-img-top{
+        width:90%;
+        height:100%;
+        padding:0px;
+        object-fit:cover;
+    }
+
+    .related-video{
+        width: 22rem;
+        margin:0px;
+    }
+}
+
